@@ -5,7 +5,7 @@ from diagrams.onprem.vcs import Github
 from diagrams.onprem.gitops import ArgoCD
 from diagrams.onprem.client import Users
 
-with Diagram("AWS Accounts Architecture", outformat=["jpg", "png"]):
+with Diagram("AWS Accounts Architecture", outformat=["jpg"], filename="../img/acc_arch"):
     org_root = Organizations ("MockUp Org")
     ou_infra = OrganizationsOrganizationalUnit("Infra")
     ou_security = OrganizationsOrganizationalUnit("Security")
